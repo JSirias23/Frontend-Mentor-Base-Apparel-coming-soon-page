@@ -1,0 +1,181 @@
+/* ## Colors
+
+### Primary
+
+- Desaturated Red: hsl(0, 36%, 70%)
+- Soft Red: hsl(0, 93%, 68%)
+
+### Neutral
+
+- Dark Grayish Red: hsl(0, 6%, 24%)
+
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #000;
+}
+
+.flex-box {
+  display: flex;
+  margin: 0 auto;
+  gap: 3rem;
+  height: 100vh;
+  width: 1100px;
+  background-color: #fff;
+}
+
+.left-box {
+  padding: 32px 112px;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.logo {
+  margin-top: 32px;
+  margin-bottom: 96px;
+}
+
+.info-box h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 3.5rem;
+  letter-spacing: 0.8rem;
+  color: hsl(0, 6%, 24%);
+  margin-bottom: 24px;
+}
+
+.info-box span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+.info-box p {
+  color: hsl(0, 36%, 70%);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.info-box {
+  margin-top: 64px;
+}
+
+.form-control form {
+  position: relative;
+}
+
+.form-control input {
+  padding: 12px 24px;
+  width: 90%;
+  outline: none;
+  border-radius: 24px;
+  border: 1px solid hsl(0, 36%, 70%);
+}
+
+.form-control input:focus {
+  border: 1px solid red;
+}
+
+.form-control button {
+  border-radius: 20px;
+  width: 20%;
+  padding: 10px 20px;
+  background-color: hsl(0, 93%, 68%);
+  border: none;
+  position: relative;
+  left: 250px;
+  bottom: 41px;
+  box-shadow: 3px 6px 20px hsl(0, 93%, 68%);
+  cursor: pointer;
+}
+
+.form-control button:active,
+.form-control button:hover {
+  background-color: hsl(0, 36%, 70%);
+  box-shadow: 3px 6px 20px hsl(0, 36%, 70%);
+}
+
+.form-control i {
+  color: hsl(0, 93%, 68%);
+  position: absolute;
+  top: 12px;
+  right: 125px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  left: 25px;
+  margin-top: 10px;
+  padding-bottom: 24px;
+  font-size: 10px;
+  color: hsl(0, 93%, 68%);
+  visibility: hidden;
+}
+
+.error small {
+  position: absolute;
+  left: 25px;
+  margin-top: 10px;
+  padding-bottom: 24px;
+  font-size: 10px;
+  color: hsl(0, 93%, 68%);
+  visibility: visible;
+}
+
+.error input {
+  border: 1px solid red;
+}
+
+.error i {
+  top: 12px;
+  right: 80px;
+  visibility: visible;
+}
+
+.success input {
+  border: 1px solid hsl(118, 93%, 68%);
+}
+
+.success small {
+  left: 25px;
+  margin-top: 10px;
+  padding-bottom: 24px;
+  font-size: 10px;
+  color: hsl(118, 93%, 68%);
+  visibility: visible;
+}
+
+.right-box img {
+  height: 100%;
+  width: 100%;
+}
+
+.right-box {
+  width: 1300px;
+}
+
+footer {
+  color: white;
+}
+
+@media (width: 775px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}
